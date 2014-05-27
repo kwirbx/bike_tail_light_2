@@ -1,2 +1,2 @@
 all:
-	g++ -Ilib testy.cpp lib/Tween.cpp -o build/testy
+	g++ -Isrc tweenTest.cpp src/Tween.cpp -o build/tweenTest

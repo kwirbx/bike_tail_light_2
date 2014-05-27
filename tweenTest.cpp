@@ -15,12 +15,15 @@ main(){
 	// (red, green, blue) and use the same
 	// duration. realistically the range would
 	// differ from subpixel to subpixel
+	// TODO - loop and reverse options
 	Tween r(range, duration);
 	Tween g(range, duration);
 	Tween b(range, duration);
 
 	// "play" each tween a frame at a time
 	// and output the value
+	// NOTE: Layer will take care of this RGB
+	// junk for you. 
 	while(!r.isDone()){
 		r.tick();
 		g.tick();
